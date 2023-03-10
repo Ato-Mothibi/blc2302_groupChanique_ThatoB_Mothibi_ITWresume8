@@ -1,0 +1,302 @@
+/* Changing the font of the webpage to a different font */
+*{
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+/*Styling the image and menu bar*/
+}
+
+header{
+    
+    display: flex;
+    font-size: small;
+    border-style:double;
+    
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text styles */
+    text-align: center;
+    color: white;
+
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-photo/beautiful-seashore-with-sun-reflected_1203-1686.jpg?w=900&t=st=1678279398~exp=1678279998~hmac=95e1ff01ae3bd1f185d38c87d21bfa00ec08fb4e5f8bfc249b0bba9e3925f305);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.photo{
+    width: 300px;
+    height: 380px;
+    border-radius: 50% 50%;
+    border: 8px solid white;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    flex: 3;
+}
+ #intro{
+    flex: 35%;
+    padding: 50;
+    position: relative;
+    left: 30%; 
+    margin-bottom: 20%; 
+    
+} 
+.menu{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 10px;
+    color: aliceblue;
+    background: #677381;
+    margin: 16px;
+    cursor: pointer;
+    box-shadow: 5px 10px #a7a5b4;
+    border-radius: 10px 10px;
+    width: 350%;
+}
+.menu:hover{
+    background-color: pink;
+}
+
+/* Introductory statement */
+.about{
+    display: flex;
+    padding: 40px;
+    margin-top: 20%;
+}
+#int{
+    padding: 10px;
+    flex: 5; 
+    text-align: left;
+}
+#calldet{
+    padding: 8px;
+    flex: 2; 
+    text-align: left;
+}
+#calldetails{
+    padding: 8px;
+    flex: 2; 
+    text-align: left;
+}
+
+article{
+    background: #B9B9B9;
+}
+
+/* Education history */
+.edu{
+    display: flex;
+}
+#qual1{
+    text-align: left;
+    padding: 10px;
+    flex: 4;
+    text-align: start;
+}
+#qual01{
+    flex: 10;
+    padding: 10px;
+    left: 50px;
+}
+
+.edu1{
+    display: flex;
+}
+#qual2{
+    text-align: left;
+    padding: 10px;
+    flex: 4;
+}
+#qual02{
+    flex: 10;
+    padding: 10px;
+    left: 50px;
+}
+
+table{
+    border-collapse: 20px collapse;
+    letter-spacing: 1px;
+    border-spacing: 10px 10px;
+    width: 100%;
+    height: 50px;
+}
+td{
+    text-align: center;
+    padding: 20px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+
+.exper{
+    text-align: center;
+}
+
+.skill{
+  text-align: center;
+}
+
+footer{
+    background: #887177;
+    text-align: center;
+}
+
+.formcol{
+    display: flex;
+    justify-content: center;
+}
+
+.col1{
+    padding: 5px;
+}
+.col2{
+    padding: 5px;
+}
+.msg{
+   border: 60% 20%;
+}
+
+.btncont{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 10px;
+    background: #677381;
+    margin: 16px;
+    cursor: pointer;
+    box-shadow: 5px 10px #a7a5b4;
+    width: 10%;
+    left: -100%; right: -100%;
+    margin: auto;
+}
+
+.btncont:hover{
+    background-color: pink;
+}
+    
+
+/* button back to the top */
+.btotop{
+    position: fixed;
+    bottom: 10px;
+    background-color: #F7EEF6;
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+    left: 25%;
+    cursor: pointer;
+    margin-left: 10%;
+    box-shadow: 5px 10px #030303;
+    width: 70px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 1.5vw;
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
+
+         /* Background styles */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://previews.123rf.com/images/virtosmedia/virtosmedia2302/virtosmedia230252025/198748418-colorful-macaroons-on-pastel-mint-background-flat-lay-top-view.jpg);  
+}
+    article{
+        font-size: 1.5vw;
+        background: rgb(230, 13, 49);
+    }
+    footer{
+        font-size: 1.5vw;
+        background: blueviolet;
+    }
+    .photo{
+        top:10%;
+        width: 30%;
+        height: 25%;
+    }
+    .menu{
+        font-size: 1.5vw;
+        width: 15vw;
+       }
+    #intro{
+        margin-bottom: 75%;
+        left: 50%;
+    }
+    .about{
+        margin-top: 50%;
+    }
+    
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 600px) {
+    header{
+        font-size: 1.5vw;
+         /* Sizing */
+        width: 100vw;
+        height: 100vh;
+
+         /* Background styles */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://thumbs.dreamstime.com/b/ears-golden-wheat-against-backdrop-bright-blue-sky-lit-rays-hot-summer-sun-121878304.jpg);
+    }
+        article {background: blue;}
+        footer{background: blueviolet;}
+        #intro  {position: fixed;}
+    
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    header{
+         font-size: 1.8vw;
+         /* Sizing */
+         width: 100vw;
+         height: 100vh;
+ 
+          /* Background styles */
+         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://previews.123rf.com/images/virtosmedia/virtosmedia2302/virtosmedia230252025/198748418-colorful-macaroons-on-pastel-mint-background-flat-lay-top-view.jpg);  
+    }
+    
+    article {background: blue;}
+    footer {background: greenyellow;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+    article {background: orange;}
+    footer {background: pink;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    header{
+         /* Sizing */
+         width: 100vw;
+         height: 100vh;
+ 
+          /* Background styles */
+         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://previews.123rf.com/images/davidfranklinstudioworks/davidfranklinstudioworks1505/davidfranklinstudioworks150500047/39503654-summer-beach-sun-fun.jpg);  
+    }
+    
+    article {background: rgb(14, 232, 177);}
+    footer {background: greenyellow;}
+
+
+  }
+
+
+    
