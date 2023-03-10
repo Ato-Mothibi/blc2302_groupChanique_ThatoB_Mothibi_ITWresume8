@@ -7,4 +7,10 @@ HTML: index.html
 -experiences
 -skills
 -contact
+-Back button
+
 CSS: stylesheet.css
+-Optimising Images with CSS
+-CSS Media Queries
+-CSS rules and styles
+

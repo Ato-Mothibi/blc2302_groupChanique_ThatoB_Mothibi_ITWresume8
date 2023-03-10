@@ -2,13 +2,11 @@
 *{
     font-weight: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
- 
-/*Styling the image and menu bar*/
 }
 
 header{
     
-    display: flex;
+    /* display: flex; */
     font-size: small;
     border-style:double;
     
@@ -17,53 +15,22 @@ header{
     height: 100vh;
 
     /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 
     /* text styles */
     text-align: center;
     color: white;
 
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-photo/beautiful-seashore-with-sun-reflected_1203-1686.jpg?w=900&t=st=1678279398~exp=1678279998~hmac=95e1ff01ae3bd1f185d38c87d21bfa00ec08fb4e5f8bfc249b0bba9e3925f305);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1594315590298-329f49c8dcb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.photo{
-    width: 300px;
-    height: 380px;
-    border-radius: 50% 50%;
-    border: 8px solid white;
-    position: absolute;
-    top: 10px;
-    left: 40px;
-    flex: 3;
-}
- #intro{
-    flex: 35%;
-    padding: 50;
-    position: relative;
-    left: 30%; 
-    margin-bottom: 20%; 
-    
-} 
-.menu{
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    padding: 20px 10px;
-    color: aliceblue;
-    background: #677381;
-    margin: 16px;
-    cursor: pointer;
-    box-shadow: 5px 10px #a7a5b4;
-    border-radius: 10px 10px;
-    width: 350%;
-}
 .menu:hover{
     background-color: pink;
 }
@@ -71,8 +38,7 @@ header{
 /* Introductory statement */
 .about{
     display: flex;
-    padding: 40px;
-    margin-top: 20%;
+    padding: 15px;
 }
 #int{
     padding: 10px;
@@ -199,8 +165,58 @@ footer{
     margin-left: 10%;
     box-shadow: 5px 10px #030303;
     width: 70px;
+    color: #030303;
 }
 
+.contain{
+    display: flex;
+    padding: 35px;
+}
+
+
+
+/* nav has to be inside the intro div because they have to line without them having different classes*/
+#intro{
+    flex: 70%;
+    padding: 20px;
+    display: flex;
+
+    /* nav code */
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 10px;
+    color: aliceblue;
+   
+    margin: 16px;
+    cursor: pointer;
+    
+   
+    width: 25%;
+    flex: 70%;
+}
+#img{
+    display: flex;
+}
+
+.photo{
+    width: 300px;
+    height: 380px;
+    border-radius: 50% 50%;
+    border: 8px solid white;
+}
+
+.menu{
+    display: block;
+    text-decoration: none;
+    background: #677381;
+    width: 80%;
+    border-radius: 25px 25px;
+    padding: 20px 10px;
+    box-shadow: 5px 10px;
+    margin: 18px;
+    color: aliceblue;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -210,10 +226,26 @@ footer{
         /* Sizing */
         width: 100vw;
         height: 100vh;
+   
 
          /* Background styles */
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://previews.123rf.com/images/virtosmedia/virtosmedia2302/virtosmedia230252025/198748418-colorful-macaroons-on-pastel-mint-background-flat-lay-top-view.jpg);  
-}
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://previews.123rf.com/images/virtosmedia/virtosmedia2302/virtosmedia230252025/198748418-colorful-macaroons-on-pastel-mint-background-flat-lay-top-view.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+    }
+
+    .photo{
+        width: 30vw;
+        height: 25vh;
+    }
+     
+    .img, .intro{
+       flex-direction: column;
+    
+    }
+
     article{
         font-size: 1.5vw;
         background: rgb(230, 13, 49);
@@ -222,41 +254,34 @@ footer{
         font-size: 1.5vw;
         background: blueviolet;
     }
-    .photo{
-        top:10%;
-        width: 30%;
-        height: 25%;
-    }
-    .menu{
-        font-size: 1.5vw;
-        width: 15vw;
-       }
-    #intro{
-        margin-bottom: 75%;
-        left: 50%;
-    }
-    .about{
-        margin-top: 50%;
-    }
     
-  }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
+    .about{
+        
+        font-size: 1.5vw;
+        top:30%;
+        
+    
+    }
+}
+  /* Small devices (portrait tablets and large phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     header{
         font-size: 1.5vw;
          /* Sizing */
-        width: 100vw;
-        height: 100vh;
-
+         width: 100vw;
+         height: 100vh;
+    
          /* Background styles */
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://thumbs.dreamstime.com/b/ears-golden-wheat-against-backdrop-bright-blue-sky-lit-rays-hot-summer-sun-121878304.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
         article {background: blue;}
         footer{background: blueviolet;}
-        #intro  {position: fixed;}
-    
   }
+
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
@@ -267,18 +292,36 @@ footer{
          height: 100vh;
  
           /* Background styles */
-         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://previews.123rf.com/images/virtosmedia/virtosmedia2302/virtosmedia230252025/198748418-colorful-macaroons-on-pastel-mint-background-flat-lay-top-view.jpg);  
+         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://previews.123rf.com/images/virtosmedia/virtosmedia2302/virtosmedia230252025/198748418-colorful-macaroons-on-pastel-mint-background-flat-lay-top-view.jpg);
+         background-size: cover;
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-attachment: fixed;  
     }
+ 
     
     article {background: blue;}
-    footer {background: greenyellow;}
+    footer {background: rgb(141, 141, 242);}
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
+    header{
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
+
+         /* Background styles */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://previews.123rf.com/images/davidfranklinstudioworks/davidfranklinstudioworks1505/davidfranklinstudioworks150500047/39503654-summer-beach-sun-fun.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+   }
 
     article {background: orange;}
     footer {background: pink;}
+
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -289,13 +332,15 @@ footer{
          height: 100vh;
  
           /* Background styles */
-         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://previews.123rf.com/images/davidfranklinstudioworks/davidfranklinstudioworks1505/davidfranklinstudioworks150500047/39503654-summer-beach-sun-fun.jpg);  
+         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-photo/beautiful-seashore-with-sun-reflected_1203-1686.jpg?w=900&t=st=1678279398~exp=1678279998~hmac=95e1ff01ae3bd1f185d38c87d21bfa00ec08fb4e5f8bfc249b0bba9e3925f305);
+         background-size: cover;
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-attachment: fixed;  
     }
-    
+
     article {background: rgb(14, 232, 177);}
     footer {background: greenyellow;}
-
-
   }
 
 
